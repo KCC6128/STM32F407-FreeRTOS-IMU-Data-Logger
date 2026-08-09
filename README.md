@@ -354,7 +354,7 @@ The Orange LED toggles whenever a sample is printed.
 
 Each stored sample uses a fixed-size `FlashRecord_t`.
 
-<img src="docs/flash_memory_layout.png" width="600">
+<img src="docs/flash_memory_layout.png" width="650">
 
 The record structure is:
 
