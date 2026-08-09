@@ -1,0 +1,19 @@
+# Keil MDK-ARM 暫存檔與編譯垃圾
+MDK-ARM/DebugConfig/
+MDK-ARM/RTE/
+*.o
+*.d
+*.crf
+*.htm
+*.dep
+*.map
+*.lst
+*.hex
+*.bin
+*.uvguix.*
+*.scvd
+*.build_log.htm
+
+# 作業系統隱藏檔
+.DS_Store
+Thumbs.db
