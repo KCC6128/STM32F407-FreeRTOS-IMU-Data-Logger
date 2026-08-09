@@ -217,12 +217,11 @@ The logger queue therefore carries both data messages and control messages.
 ```text
 IMUTask -------- SAMPLE ------┐
                               |
-                              v
-                         loggerQueue
                               |
                               v
-                         LoggerTask
+                         loggerQueue --------> LoggerTask
                               ^
+                              |
                               |
 CommandTask ----- DUMP -------|
             ----- CLEAR ------|
