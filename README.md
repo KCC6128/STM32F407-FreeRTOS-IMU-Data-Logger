@@ -1135,6 +1135,8 @@ STM32F407-FreeRTOS-IMU-Data-Logger/
 │
 ├── Drivers/
 │
+├── MDK-ARM/                               <-- Keil uVision project files
+│
 ├── Middlewares/
 │   └── Third_Party/
 │       └── FreeRTOS/
@@ -1143,9 +1145,9 @@ STM32F407-FreeRTOS-IMU-Data-Logger/
 │   ├── system_architecture.png
 │   └── flash_memory_layout.png
 │
+├── .gitignore
 ├── README.md
-│
-└── ...
+└── STM32F407_FreeRTOS_IMU_Logger.ioc      <-- STM32CubeMX configuration file
 ```
 
 ---
