@@ -96,7 +96,7 @@ UART5 output is shared by multiple tasks and protected by `uartMutex`.
 
 The application is divided into independent RTOS tasks with clearly separated responsibilities.
 
-![System Architecture](docs/system_architecture.png)
+<img src="docs/system_architecture.png" width="600">
 
 The system contains six tasks:
 
@@ -354,7 +354,7 @@ The Orange LED toggles whenever a sample is printed.
 
 Each stored sample uses a fixed-size `FlashRecord_t`.
 
-![Flash Memory Layout](docs/flash_memory_layout.png)
+<img src="docs/flash_memory_layout.png" width="600">
 
 The record structure is:
 
