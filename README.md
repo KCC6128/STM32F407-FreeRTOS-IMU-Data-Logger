@@ -73,7 +73,7 @@ UART5 output is shared by multiple tasks and protected by `uartMutex`.
 - 50 Hz periodic MPU6500 acceleration sampling
 - Fixed-period scheduling using `osDelayUntil()`
 - Producer / consumer communication using Message Queues
-- Separate queues for UART output and Flash logging
+- Separate queues for runtime data output and Flash logging
 - Tagged logger messages for `SAMPLE`, `DUMP`, and `CLEAR`
 - Shared SPI2 bus protected by Mutex
 - Shared UART5 output protected by Mutex
@@ -262,6 +262,7 @@ UART5 output is shared by multiple tasks.
 `uartMutex` ensures that a complete UART message is transmitted without another task mixing its output into the same message.
 
 ```text
+IMUTask
 PrintTask
 LoggerTask
 CommandTask
@@ -321,7 +322,7 @@ When logging is enabled, the same sample is also wrapped in a `LOGGER_MESSAGE_SA
 
 ## Print Task
 
-`PrintTask` consumes every sample from `imuQueue`.
+`PrintTask` consumes every sample successfully queued in `imuQueue`.
 
 The task prints one sample for every 25 received samples.
 
