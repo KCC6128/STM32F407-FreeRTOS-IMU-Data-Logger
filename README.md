@@ -742,14 +742,14 @@ PrintTask ----------\
 LoggerTask ----------\
 CommandTask ----------> systemHealthEvent
 HeartbeatTask -------/
-                         |
-                         v
-                   SupervisorTask
-                         |
-                  All 5 flags received
-                         |
-                         v
-                  HAL_IWDG_Refresh()
+                               |
+                               v
+                         SupervisorTask
+                               |
+                      All 5 flags received
+                               |
+                               v
+                       HAL_IWDG_Refresh()
 ```
 
 Failure condition:
@@ -764,10 +764,10 @@ SupervisorTask detects failure
 Do not refresh IWDG
         |
         v
-IWDG timeout
+  IWDG timeout
         |
         v
-MCU Reset
+    MCU Reset
 ```
 
 This allows the hardware watchdog to recover the system if one of the monitored tasks stops reporting its health state.
