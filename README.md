@@ -1002,53 +1002,6 @@ Reset cause: IWDG watchdog
 
 ---
 
-## Demo Sequence
-
-A recommended demonstration sequence is:
-
-```text
-status
-start
-status
-stop
-dump 5
-clear
-status
-start
-stop
-fault imu
-```
-
-This demonstrates:
-
-```text
-Logger Status
-     ↓
-Start Logging
-     ↓
-Flash Storage
-     ↓
-Stop Logging
-     ↓
-Flash Dump
-     ↓
-Flash Clear
-     ↓
-Restart Logging
-     ↓
-Fault Injection
-     ↓
-Health Monitor Failure
-     ↓
-Stop IWDG Refresh
-     ↓
-Watchdog Reset
-     ↓
-Automatic Recovery
-```
-
----
-
 ## Verified Behavior
 
 The project has been tested with the following behavior:
@@ -1210,8 +1163,3 @@ of continuously logged data.
 
 The current implementation intentionally uses a relatively small Flash region to keep testing, dumping, clearing, and demonstration cycles short.
 
----
-
-## License
-
-This project is intended for learning, portfolio demonstration, and embedded-system development practice.
