@@ -14,6 +14,30 @@ The main purpose of this project is to integrate multiple STM32 and RTOS concept
 
 ---
 
+## Demo
+
+This demo shows:
+
+- Running the FreeRTOS-based IMU data logger on STM32F407
+- Reading MPU6500 acceleration data at 50 Hz
+- Sharing SPI2 between MPU6500 and W25Q64 using `spiMutex`
+- Monitoring system status through UART5
+- Starting Flash logging through UART commands
+- Automatically stopping logging when the logger reaches 1024 records
+- Reading stored records using `dump N`
+- Clearing the logger region using `clear`
+- Starting and stopping logging using the PA0 button
+- Handling PA0 events through EXTI and Thread Flags
+- Injecting an IMU health-reporting fault using `fault imu`
+- Detecting a missing health flag through `SupervisorTask`
+- Stopping IWDG refresh when the system becomes unhealthy
+- Resetting the MCU through IWDG timeout
+- Detecting the IWDG reset cause and recovering to normal operation
+
+[Watch the demo video]([YOUR_VIDEO_LINK](https://youtu.be/qdfOgjXE6XQ))
+
+---
+
 ## Hardware
 
 | Component | Usage |
