@@ -37,7 +37,7 @@ This demo shows:
 [Watch the demo video](https://youtu.be/qdfOgjXE6XQ)
 
 <a href="https://youtu.be/qdfOgjXE6XQ">
-  <img src="docs/FreeRTOS.png" width="400">
+  <img src="docs/FreeRTOS.png" width="350">
 </a>
 
 ---
