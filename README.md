@@ -34,7 +34,11 @@ This demo shows:
 - Resetting the MCU through IWDG timeout
 - Detecting the IWDG reset cause and recovering to normal operation
 
-[Watch the demo video]([YOUR_VIDEO_LINK](https://youtu.be/qdfOgjXE6XQ))
+[Watch the demo video](https://youtu.be/qdfOgjXE6XQ)
+
+<a href="https://youtu.be/qdfOgjXE6XQ">
+  <img src="docs/FreeRTOS.png" width="300">
+</a>
 
 ---
 
