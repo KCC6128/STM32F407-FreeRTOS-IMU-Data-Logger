@@ -1172,7 +1172,8 @@ STM32F407-FreeRTOS-IMU-Data-Logger/
 │
 ├── docs/
 │   ├── system_architecture.png
-│   └── flash_memory_layout.png
+│   ├── flash_memory_layout.png
+│   └── FreeRTOS.png
 │
 ├── .gitignore
 ├── README.md
